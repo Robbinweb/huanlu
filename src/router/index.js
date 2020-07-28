@@ -42,6 +42,17 @@ let RouteList = [
     ]
   },
   {
+    path: '/admin',
+    name: 'Admin',
+    fixed: false,
+    meta: {
+      title: '后台',
+      keepAlive: true
+    },
+    children: [],
+    component: resolve => require(['@/views/Admin/index.vue'], resolve)
+  },
+  {
     path: '*',
     name: '404',
     fixed: false,
@@ -56,11 +67,12 @@ let RouteList = [
 ]
 // admin后台
 AdminRouter.items.forEach(v => {
+  console.log('RouteList', RouteList)
   if (!Config.isPermission) {
-    RouteList[0].children.push(v)
+    RouteList[1].children.push(v)
   } else {
     if (v.fixed) {
-      RouteList[0].children.push(v)
+      RouteList[1].children.push(v)
     }
   }
 })
