@@ -53,6 +53,17 @@ let RouteList = [
     component: resolve => require(['@/views/Admin/index.vue'], resolve)
   },
   {
+    path: '/login',
+    name: 'Login',
+    fixed: false,
+    meta: {
+      title: '登录',
+      keepAlive: true
+    },
+    children: [],
+    component: resolve => require(['@/views/Login.vue'], resolve)
+  },
+  {
     path: '*',
     name: '404',
     fixed: false,
