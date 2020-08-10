@@ -1,11 +1,10 @@
 <template>
-  <div>
+  <div class="index-main">
     index
   </div>
 </template>
 <style lang="scss" scoped>
-.footer{
-  background: #1c272b;
-  color: #ffffff;
+.index-main{
+  height: 1200px;
 }
 </style>

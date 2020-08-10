@@ -21,7 +21,7 @@ let RouteList = [
     children: [
       {
         path: '/',
-        name: 'Home',
+        name: '',
         fixed: false,
         meta: {
           title: '首页',
@@ -30,15 +30,15 @@ let RouteList = [
         component: resolve => require(['@/views/Home/index.vue'], resolve)
       },
       {
-        path: '/helloworld',
-        name: 'HelloWorld',
+        path: '/index',
+        name: 'Index',
         fixed: false,
         meta: {
-          title: '你好世界',
+          title: '首页',
           keepAlive: true
         },
-        component: resolve => require(['../components/HelloWorld.vue'], resolve)
-      }
+        component: resolve => require(['@/views/Home/index.vue'], resolve)
+      },
     ]
   },
   {
@@ -50,7 +50,7 @@ let RouteList = [
       keepAlive: true
     },
     children: [],
-    component: resolve => require(['@/views/Admin/index.vue'], resolve)
+    component: resolve => require(['@/views/Admin/Layout/layout.vue'], resolve)
   },
   {
     path: '/login',
@@ -78,7 +78,7 @@ let RouteList = [
 ]
 // admin后台
 AdminRouter.items.forEach(v => {
-  console.log('RouteList', RouteList)
+  console.log('RouteList1', RouteList, v)
   if (!Config.isPermission) {
     RouteList[1].children.push(v)
   } else {
@@ -86,6 +86,7 @@ AdminRouter.items.forEach(v => {
       RouteList[1].children.push(v)
     }
   }
+  console.log('RouteList2', RouteList)
 })
 const router = new VueRouter({
   mode: 'history',
