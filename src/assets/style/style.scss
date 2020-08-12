@@ -22,6 +22,9 @@ body{
   &_main{
     background: #161a1d;
     color: #fff;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 80%;
   }
   &_sub{
     padding: 40px 0 20px;
@@ -31,12 +34,12 @@ body{
     color: #5c6870;
   }
   &_version {
-    padding: 10px 20px 18px;
+    // padding: 10px 20px 18px;
     border-top: 1px solid #070808;
     background: #090a0b;
     text-align: center;
     .beian{
-      padding: 10px 0 20px;
+      padding: 20px 0px;
     }
   }
 }
