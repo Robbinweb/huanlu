@@ -1,6 +1,6 @@
 <template>
   <div>
     404
-    <router-link to="/">返回首页</router-link>
+    <router-link to="/index">返回首页</router-link>
   </div>
 </template>

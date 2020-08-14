@@ -50,7 +50,7 @@ let RouteList = [
       keepAlive: true
     },
     children: [],
-    component: resolve => require(['@/views/Admin/Layout/layout.vue'], resolve)
+    blank: resolve => require(['@/views/Admin/Layout/layout.vue'], resolve)
   },
   {
     path: '/login',
@@ -61,7 +61,7 @@ let RouteList = [
       keepAlive: true
     },
     children: [],
-    component: resolve => require(['@/views/Login.vue'], resolve)
+    blank: resolve => require(['@/views/Login.vue'], resolve)
   },
   {
     path: '*',
