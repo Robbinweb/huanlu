@@ -1,4 +1,4 @@
-# huanlu
+# huanlu-vue
 
 ## Project setup
 ```
