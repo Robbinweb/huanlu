@@ -1,6 +1,6 @@
 <template>
   <section class="main">
-    <div v-loading.fullscreen.lock="loading">
+    <div v-loading="loading">
       <div v-for="(item,i) in data" :key="i">
         {{item}}
       </div>
@@ -27,8 +27,6 @@ export default {
     }
   },
   created() {
-    
-    
     // 首页数据
     this.getList()
   },

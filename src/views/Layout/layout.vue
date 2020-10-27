@@ -15,6 +15,22 @@
         <Footer></Footer>
       </el-footer>
     </el-container>
+    <el-backtop target=".page-component__scroll .el-scrollbar__wrap"></el-backtop>
+    <el-backtop target=".page-component__scroll .el-scrollbar__wrap" :bottom="100">
+    <div
+      style="{
+        height: 100%;
+        width: 100%;
+        background-color: #f2f5f6;
+        box-shadow: 0 0 6px rgba(0,0,0, .12);
+        text-align: center;
+        line-height: 40px;
+        color: #1989fa;
+      }"
+    >
+      UP
+    </div>
+  </el-backtop>
   </section>
 </template>
 <script>
@@ -47,6 +63,20 @@ export default {
     background: #242a2d;
     padding: 20px 0px;
     color: #ffffff;
+  }
+  .page-component__scroll {
+      height: calc(100% - 80px);
+      margin-top: 80px;
+  }
+  .page-component__scroll>.el-scrollbar__wrap {
+    overflow-x: auto;
+  }
+  .el-scrollbar__wrap--hidden-default {
+      scrollbar-width: none;
+  }
+  .el-scrollbar__wrap {
+      overflow: scroll;
+      height: 100%;
   }
 }
 </style>

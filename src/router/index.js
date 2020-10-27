@@ -43,6 +43,17 @@ let RouteList = [
         },
         component: resolve => require(['@/views/Article/List.vue'], resolve)
       },
+      
+      {
+        path: '/onfile',
+        name: 'Onfile',
+        fixed: false,
+        meta: {
+          title: '归档',
+          keepAlive: true
+        },
+        component: resolve => require(['@/views/Onfile/index.vue'], resolve)
+      },
       {
         path: '/about',
         name: 'About',
