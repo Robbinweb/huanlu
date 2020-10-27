@@ -1,5 +1,5 @@
 <template>
   <section>
-    dashboard
+    Default
   </section>
 </template>
