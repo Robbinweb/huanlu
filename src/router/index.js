@@ -89,6 +89,16 @@ let RouteList = [
         component: resolve => require(['../components/Admin/Default.vue'], resolve)
       },
       {
+        path: '/dashboard',
+        name: 'Dashboard',
+        fixed: false,
+        meta: {
+          title: '首页',
+          keepAlive: true
+        },
+        component: resolve => require(['../components/Admin/Dashboard/index.vue'], resolve)
+      },
+      {
         path: '/userinfo',
         name: 'UserInfo',
         fixed: false,
