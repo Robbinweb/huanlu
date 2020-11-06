@@ -75,7 +75,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .banner{
-  height: 250px;
+  height: 200px;
   .logo{
     position: absolute;
     margin-top: 100px;

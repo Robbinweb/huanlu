@@ -36,5 +36,8 @@ export default {
 <style lang="scss" scoped>
 .nav-bar{
   text-align: center;
+  .el-menu{
+    border: 0px;
+  }
 }
 </style>
