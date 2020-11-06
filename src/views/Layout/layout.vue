@@ -1,5 +1,6 @@
 <template>
   <section class="home">
+    <banner />
     <el-container>
       <el-header>
         <NavBar></NavBar>
@@ -20,8 +21,10 @@
 <script>
 import NavBar from './NavBar'
 import Footer from './Footer'
+import Banner from './banner'
 export default {
   components: {
+    Banner,
     NavBar,
     Footer
   },
@@ -33,6 +36,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
 .home{
   .el-header{
     // margin: 0 auto;
