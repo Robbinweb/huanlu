@@ -18,7 +18,7 @@
     <!-- style="filter: blur(6px); transform: translate(0px, 0px) rotate(0deg);" -->
     <!-- style="filter: blur(-600px); transform: translate(50.14px, 0px) rotate(0deg);" -->
     <div class="bg" @mouseover="changeMask(6)" @mouseout="changeMask(6)" @touchstart="touchstart" @touchmove="touchmove" >
-      <img class="logoimg" height="200px" src="@/assets/image/bilibili/6.png" alt="" style="filter: blur(6px); transform: translate(0px, 0px) rotate(0deg);">
+      <img class="logoimg" height="200px" src="@/assets/image/bilibili/6.png" alt="">
     </div>
     <div class="logo">
       <img class="logoimg" height="100px" width="200px" src="@/assets/image/logo/logo.png" alt="">

@@ -43,7 +43,6 @@ let RouteList = [
         },
         component: resolve => require(['@/views/Article/List.vue'], resolve)
       },
-      
       {
         path: '/onfile',
         name: 'Onfile',
@@ -53,6 +52,28 @@ let RouteList = [
           keepAlive: true
         },
         component: resolve => require(['@/views/Onfile/index.vue'], resolve)
+      },
+      {
+        path: '/cloudMusic',
+        name: 'CloudMusic',
+        fixed: false,
+        component: resolve => require(['@/views/CloudMusic/index.vue'], resolve),
+        meta: {
+          title: '云音乐',
+          keepAlive: true
+        },
+        children: [
+          {
+            path: '/CloudMusic',
+            name: 'CloudMusic',
+            fixed: false,
+            meta: {
+              title: '云音乐',
+              keepAlive: true
+            },
+            component: resolve => require(['@/views/CloudMusic/index.vue'], resolve)
+          },
+        ]
       },
       {
         path: '/about',
