@@ -1,8 +1,7 @@
 <template>
   <section class="banner">
-    1
     <img :src="logoImg" alt="">
-    <img class="logoimg" src="../../../assets/image/logo/logo.png" alt="">
+    <img class="logoimg" src="../../../assets/images/logo/logo.png" alt="">
   </section>
 </template>
 <script>

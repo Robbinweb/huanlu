@@ -1,27 +1,27 @@
 <template>
   <section class="banner" >
     <div class="bg" @mouseover="changeMask(1)" @mouseout="changeMask(1)" @touchstart="touchstart" @touchmove="touchmove" >
-      <img class="logoimg" height="200px" src="@/assets/image/bilibili/1.png" alt="">
+      <img class="logoimg" height="200px" src="@/assets/images/bilibili/1.png" alt="">
     </div>
     <div class="bg" @mouseover="changeMask(2)" @mouseout="changeMask(2)" @touchstart="touchstart" @touchmove="touchmove" >
-      <img class="logoimg" height="200px" src="@/assets/image/bilibili/2.png" alt="">
+      <img class="logoimg" height="200px" src="@/assets/images/bilibili/2.png" alt="">
     </div>
     <div class="bg" @mouseover="changeMask(3)" @mouseout="changeMask(3)" @touchstart="touchstart" @touchmove="touchmove" >
-      <img class="logoimg" height="200px" src="@/assets/image/bilibili/3.png" alt="" >
+      <img class="logoimg" height="200px" src="@/assets/images/bilibili/3.png" alt="" >
     </div>
     <div class="bg" @mouseover="changeMask(4)" @mouseout="changeMask(4)" @touchstart="touchstart" @touchmove="touchmove" >
-      <img class="logoimg" height="200px" src="@/assets/image/bilibili/4.png" alt="" style="filter: blur(6px); transform: translate(0px, 0px) rotate(0deg);">
+      <img class="logoimg" height="200px" src="@/assets/images/bilibili/4.png" alt="" style="filter: blur(6px); transform: translate(0px, 0px) rotate(0deg);">
     </div>
     <div class="bg" @mouseover="changeMask(5)" @mouseout="changeMask(5)" @touchstart="touchstart" @touchmove="touchmove" >
-      <img class="logoimg" height="200px" src="@/assets/image/bilibili/5.png" style="filter: blur(6px); transform: translate(0px, 0px) rotate(0deg);">
+      <img class="logoimg" height="200px" src="@/assets/images/bilibili/5.png" style="filter: blur(6px); transform: translate(0px, 0px) rotate(0deg);">
     </div>
     <!-- style="filter: blur(6px); transform: translate(0px, 0px) rotate(0deg);" -->
     <!-- style="filter: blur(-600px); transform: translate(50.14px, 0px) rotate(0deg);" -->
     <div class="bg" @mouseover="changeMask(6)" @mouseout="changeMask(6)" @touchstart="touchstart" @touchmove="touchmove" >
-      <img class="logoimg" height="200px" src="@/assets/image/bilibili/6.png" alt="">
+      <img class="logoimg" height="200px" src="@/assets/images/bilibili/6.png" alt="">
     </div>
     <div class="logo">
-      <img class="logoimg" height="100px" width="200px" src="@/assets/image/logo/logo.png" alt="">
+      <img class="logoimg" height="100px" width="200px" src="@/assets/images/logo/logo.png" alt="">
     </div>
   </section>
 </template>
