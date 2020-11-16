@@ -1,34 +1,51 @@
 <template>
-  <section class="cloud-music">
-    
-    <div class="cloud-box">
-      <el-row>
-        <el-col :span="2" style="padding: 10px">
-          <span class="heading-dot heading-dot--red" @click="onCa"></span>
-          <span class="heading-dot heading-dot--yellow"></span>
-          <span class="heading-dot heading-dot--green"></span>
-        </el-col>
-        <el-col :span="2" style="padding-top: 20px">
-          <span>
-            <i class="el-icon-arrow-left" style="font-size: 20px;"></i>
-            <i class="el-icon-arrow-right" style="font-size: 20px;"></i>
-          </span>
-        </el-col>
-        <el-col :span="14">1</el-col>
-        <el-col :span="6" style="padding: 5px">
-          <el-input style="width:70%" size="small" placeholder="搜索" v-model="search">
-            <i slot="prefix" class="el-input__icon el-icon-search" @click="onSearch"></i>
-          </el-input>
-          <i class="el-icon-copy-document" style="padding:20px"></i>
-        </el-col>
-        <el-col :span="24">
-          <el-row>
-            <el-col :span="4">1</el-col>
-            <el-col :span="20" style="background:#ffffff">2</el-col>
-          </el-row>
-        </el-col>
-      </el-row>
-    </div>
+  <section class="cloud-music" :style="backgroundDiv">
+    <el-container>
+      <el-header>
+        <el-row>
+          <el-col :span="4" style="padding: 10px">
+            <span class="heading-dot heading-dot--red" @click="onCa"></span>
+            <span class="heading-dot heading-dot--yellow"></span>
+            <span class="heading-dot heading-dot--green"></span>
+          </el-col>
+          <el-col :span="2" style="padding-top: 20px">
+            <span>
+              <i class="el-icon-arrow-left" style="font-size: 20px;"></i>
+              <i class="el-icon-arrow-right" style="font-size: 20px;"></i>
+            </span>
+          </el-col>
+          <el-col :span="13">1</el-col>
+          <el-col :span="5" style="padding: 5px">
+            <el-input style="width:70%" size="small" placeholder="搜索" v-model="search">
+              <i slot="prefix" class="el-input__icon el-icon-search" @click="onSearch"></i>
+            </el-input>
+            <i class="el-icon-copy-document" style="padding:20px"></i>
+          </el-col>
+        </el-row>
+      </el-header>
+      <el-container>
+        <el-aside>
+          el-aside
+        </el-aside>
+        <el-main>
+          main
+        </el-main>
+      </el-container>
+      <!-- <el-main>
+        main
+      </el-main> -->
+      <el-footer>
+        <div class="footer-left">
+          封面
+        </div>
+        <div class="footer-main">
+          按钮
+        </div>
+        <div class="footer-right">
+          操作
+        </div>
+      </el-footer>
+    </el-container>
   </section>
 </template>
 <script>
@@ -36,7 +53,11 @@ export default {
   data() {
     return {
       search: '',
-      dialogVisible: true
+      backgroundDiv:{
+        backgroundImage: 'url(' + require('@/assets/images/bg/bg.jpg')+ ')',
+        backgroundRepeat: 'no-repeat',
+      }
+      
     }
   },
   created() {
@@ -52,13 +73,11 @@ export default {
 <style lang="scss" scoped>
 .cloud-music{
   background: #fff;
-  padding: 10px;
-  .cloud-box{
-    margin: 10px;
-    background: #f6f6f6;
-    box-shadow: 15px;
-    border-radius: 10px;
-    border:1px solid #f2f2f2;
+  padding: 20px;
+  width: 100%;
+  .el-header{
+    background: #fbf8f8;
+    border-radius: 10px 10px 0px 0px;
     .heading-dot {
       display: inline-block;
       width: 12px;
@@ -75,6 +94,31 @@ export default {
     }
     .heading-dot--green {
       background-color: #28CA42;
+    }
+  }
+  .el-aside{
+    background: #e6e6e6;
+  }
+  .el-main{
+    background: #ffffff;
+    height: 600px;
+  }
+  .el-footer{
+    background: #fbf8f8;
+    border-radius: 0px 0px 10px 10px;
+    .footer-left {
+      float: left;
+      width: 15%;
+      background: blue;
+    }
+    .footer-main{
+      width: 70%;
+      background: red;
+    }
+    .footer-right {
+      float: right;
+      width: 15%;
+      background: yellow;
     }
   }
 }
