@@ -18,6 +18,7 @@
   </section>
 </template>
 <script>
+import { getData1 } from '@/Api/common.js'
 export default {
   data() {
     return {
@@ -41,6 +42,9 @@ export default {
         }
         this.loading = false
       }, 2000);
+      getData1().then(res => {
+        console.log('res[============', res)
+      })
     },
     handleSizeChange(val) {
       console.log(`每页 ${val} 条`);
