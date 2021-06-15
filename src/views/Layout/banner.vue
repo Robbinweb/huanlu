@@ -5,7 +5,7 @@
         <img :src="item.src" >
       </div>
       <a @click="onLogo" class="logo">
-        <img class="logoimg" height="60px" width="120px" src="@/assets/images/logo/logo.png" alt="">
+        <img class="logoimg" height="80px" width="160px" src="@/assets/images/logo/logo.png" alt="">
       </a>
     </div>
     
@@ -59,14 +59,14 @@ export default {
   // height: 200px;
   .logo{
     position: absolute;
-    margin-top: 100px;
-    margin-left: 200px;
+    margin-top: 80px;
+    margin-left: 280px;
     z-index: 99999;
     // border: 1px solid red;
   }
 }
 .banner {
-  height: 160px;
+  height: 200px;
   position: relative;
   overflow: hidden;
 }

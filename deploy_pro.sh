@@ -1,8 +1,9 @@
 npm run build
 # rsync -avz -e "ssh" dist/* root@59.110.154.174:/var/www/html  # czw.huanlublog.com
-
-rsync -avz -e "ssh" dist/* root@59.110.154.174:/home/admin/huanlu # www.huanlublog.com
-# rsync -avz -e "ssh" dist/* root@59.110.154.174:/home/admin/paris  # paris.huanlublog.com
+# 腾讯云 1.117.218.45
+# 阿里云 59.110.154.174
+rsync -avz -e "ssh" dist/* root@1.117.218.45:/home/huanlu # www.huanlublog.com
+# rsync -avz -e "ssh" dist/* root@59.110.154.174:/home/admin/paris  # paris.huanlublog.com 
 
 # server{
 # 	listen 80;
