@@ -120,6 +120,16 @@ let RouteList = [
         component: resolve => require(['../components/Admin/Dashboard/index.vue'], resolve)
       },
       {
+        path: '/calendar',
+        name: 'Calendar',
+        fixed: false,
+        meta: {
+          title: '首页',
+          keepAlive: true
+        },
+        component: resolve => require(['../components/Admin/Calendar/index.vue'], resolve)
+      },
+      {
         path: '/userinfo',
         name: 'UserInfo',
         fixed: false,
