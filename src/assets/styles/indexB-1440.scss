@@ -1,0 +1,253 @@
+.wrap {
+  background: #eff0f3;
+  min-width: 1440px;
+  height: calc(100vh - 84px);
+  padding: 0 10px;
+  .wrap_header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    padding: 12px 20px;
+    .logo {
+      & img {
+        width: 70px;
+      }
+    }
+    .wrap_title {
+      text-align: center;
+      padding: 10px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #009bf8;
+      background-image: -webkit-linear-gradient(270deg, #9ad9ff, #0069de);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: hue 60s infinite linear;
+    }
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .wrap_main {
+    display: flex;
+    -webkit-box-pack: justify;
+    // -ms-flex-pack: justify;
+    justify-content: space-between;
+    // justify-content: center;
+    padding: 0 10px;
+    .ssrcsy {
+      width: 16px;
+      height: 16px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+    .finals {
+      background: url("~@/assets/image/og/icon-finals.png") no-repeat center
+        center;
+      background-size: 100% 100%;
+    }
+    .match {
+      background: url("~@/assets/image/og/icon-match.png") no-repeat center
+        center;
+      background-size: 100% 100%;
+    }
+
+    .item {
+      width: 100%;
+      padding-bottom: 15px;
+      .item-title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 10px;
+        border-left: 4px solid;
+        border-left-color: #0075e4;
+      }
+      .mess{
+        height: 80px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 10px;
+        background: #fff;
+        border-radius: 5px;
+        .mess-list {
+          overflow-y: auto;
+          padding: 5px 0px;
+          font-size: 18px;
+          line-height: 24px;
+          color: #020202;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      
+
+      .weather{
+        display: flex;
+        background: #fff;
+        -webkit-box-pack: justify;
+        // justify-content: space-between;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 10px 30px 10px 30px;
+        font-weight: bold;
+        border-radius: 10px;
+        border:1px solid #ccc;
+        box-shadow: 0 0 8px #ccc;
+        img{
+          margin-top: -30px;
+          width: 45px;
+          height: 45px;
+        }
+        span{
+          padding: 0px 5px;
+        }
+      }
+      .matchTable {
+        margin: 20px 0px;
+      }
+    }
+    .main_one {
+      width: 22%;
+      display: flex;
+      -webkit-box-pack: justify;
+      flex-direction: column;
+    }
+    .main_tow {
+      width: 56%;
+      padding: 0px 10px;
+      .main-header {
+        display: flex;
+        -webkit-box-pack: justify;
+        // -ms-flex-pack: justify;
+        justify-content: space-between;
+        background: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 8px #ccc;
+        // // color: #fff;
+        // background-image: -webkit-linear-gradient(30deg, #feffff, #f6fffa);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // -webkit-animation: hue 60s infinite linear;
+        // border: 2px solid #ccc;
+        // box-shadow:0px 5px 8px 2px #ccc;
+        .main-header-item {
+          display: flex;
+          -webkit-box-pack: justify;
+          // -ms-flex-pack: justify;
+          justify-content: space-between;
+          align-items: center;
+          .header-item-img {
+            padding: 10px;
+            background: #009cfe;
+            border-radius: 50%;
+            img {
+              width: 35px;
+            }
+          }
+          .header-item-content {
+            padding: 5px;
+            display: flex;
+            font-size: 18px;
+            flex-direction: column;
+            .content-text{
+              color: #666666
+            }
+            .content-num{
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .main-body {
+        height: 73vh;
+        // padding: 10px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 8px #ccc;
+      }
+    }
+    .main_three {
+      width: 22%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px 15px;
+      height: 83vh;
+      // overflow:auto;
+      overflow-x: hidden;
+      overflow-y: auto;
+      .three-box {
+        width: 100%;
+        margin-bottom: 20px;
+        .box-title {
+          width: 100%;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 10px 0px;
+          text-align: center;
+          background: #fff;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        .box-header {
+          display: flex;
+          -webkit-box-pack: justify;
+          // -ms-flex-pack: justify;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          padding: 10px 0px;
+
+          .box-item {
+            width: 31%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #ffffff;
+            padding: 10px 0px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 8px #ccc;
+            .box-icon {
+              border-radius: 50%;
+              padding: 7px;
+              align-items: center;
+              margin-bottom: 10px;
+              img {
+                width: 17px;
+                height: 17px;
+              }
+            }
+            .box-text{
+              color: #666666; padding: 5px
+            }
+            .box-num{
+              font-size: 20px;
+            }
+            .blue {
+              background: #009cfe;
+            }
+            .yellow {
+              background: #fac343;
+            }
+            .purple {
+              background: #7366b9;
+            }
+          }
+        }
+        .box-body {
+          padding: 10px 0px;
+        }
+      }
+    }
+  }
+}

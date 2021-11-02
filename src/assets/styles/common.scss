@@ -1,0 +1,34 @@
+@import "./variables.scss";
+.el-form-item {
+  margin-bottom: 15px;
+}
+.el-dialog__body {
+  padding: 20px;
+}
+.flexlast {
+  // 筛选条件末尾按钮布局
+  float: right;
+  .el-form-item {
+    width: 100%;
+    .el-form-item__content {
+      float: right;
+    }
+  }
+}
+.mb8 {
+  margin-right: 0 !important;
+}
+
+.el-table .DisabledSelection .cell .el-checkbox__inner {
+  margin-left: -30px;
+  position: relative;
+}
+.el-table .DisabledSelection .cell:before {
+  content: "全选";
+  position: absolute;
+  right: 11px;
+}
+
+.line {
+  text-align: center;
+}

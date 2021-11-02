@@ -85,6 +85,16 @@ let RouteList = [
         },
         component: resolve => require(['@/views/About/index.vue'], resolve)
       },
+      {
+        path: '/map',
+        name: 'Map',
+        fixed: false,
+        meta: {
+          title: '地图',
+          keepAlive: true
+        },
+        component: resolve => require(['@/views/Map/index.vue'], resolve)
+      },
     ]
   },
   {

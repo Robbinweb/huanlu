@@ -1,53 +1,47 @@
 <template>
   <section>
     日历
-    <calendar
-      :calendarList="calendarData"
-      @returnData="getSelectData"
-      :illustration="illustrationData"
-    ></calendar>
+    <!-- 日历 -->
+    <ele-calendar
+      ref="calendarItemRef"
+      :checkType="checkType"
+      :legendItem="legendItem"
+      :calendarObj="calendarData"
+      @getCheckData="getCheckData">
+    </ele-calendar>
   </section>
 </template>
 <script>
 import calendar from './components/calendar.vue' 
 export default {
   components:{
-    calendar:calendar
+    'ele-calendar':calendar
   },
   data() {
     return {
-      list: [],
-      calendarData: [
-        {
-          isSelected: false,
-          available:'1000',
-          checked: '500',
-          startDate: '2021-06-16',
-        },
-        {
-          isSelected: false,
-          available:'1000',
-          checked: '1000',
-          startDate: '2021-06-17',
-        },
-        {
-          isSelected: false,
-          available:'1000',
-          checked: '500',
-          startDate: '2021-06-19',
-        },
-        {
-          isSelected: false,
-          available:'1000',
-          checked: '490',
-          startDate: '2021-06-21',
-        }
-      ],
-      illustrationData: [
-        { type: '床', background: '#4190f7', color: '#fff', explain: '当日无空余床位'  },
-        { type: '床', background: '#92ecd6', color: '#fff', explain: '当日有空余床位'  },
-        { type: '未', background: '#d9d9d9', color: '#fff', explain: '未安排' }
-      ]
+      // 日历
+      checkType: 'checked', // checked:日期可选 text:日期
+      // 图例
+      legendItem: {
+        name: 'shiftName',
+        color: 'shiftShowColor',
+        data: [
+          { shiftShowColor: '#4190f7', shiftName: '当日班次均有安排'  },
+          { shiftShowColor: '#92ecd6', shiftName: '当日有班次未安排'  },
+          { shiftShowColor: '#d9d9d9', shiftName: '当日班次均未安排' }
+        ]
+      },
+      calendarData: {
+        areaId:'areaId',
+        areaName:'areaName',
+        schedualDate:'schedualDate',
+        shiftShowColor: 'shiftShowColor',
+        startTime: 'startTime',
+        endTime: 'endTime',
+        data: [
+          
+        ]
+      },
     }
   },
   methods:{

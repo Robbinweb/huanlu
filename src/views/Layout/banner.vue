@@ -59,14 +59,14 @@ export default {
   // height: 200px;
   .logo{
     position: absolute;
-    margin-top: 80px;
+    margin-top: 140px;
     margin-left: 280px;
     z-index: 99999;
     // border: 1px solid red;
   }
 }
 .banner {
-  height: 200px;
+  height: 240px;
   position: relative;
   overflow: hidden;
 }

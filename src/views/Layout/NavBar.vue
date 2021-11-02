@@ -19,6 +19,7 @@
           <el-menu-item index="/onfile">归档</el-menu-item>
           <el-menu-item index="/cloudMusic">云音乐</el-menu-item>
           <el-menu-item index="/about">关于我</el-menu-item>
+          <el-menu-item index="/map">地图</el-menu-item>
           <el-menu-item index="/login">登录</el-menu-item>
         </el-menu>
       </el-col>
